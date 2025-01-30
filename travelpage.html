@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travelpage_styles.css">
+    <title>Visit Yunnan, China</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Meddon&family=Mansalva&family=Vidaloka&display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+</head>
+<script>
+    window.addEventListener('scroll', function () {
+      const overlay = document.querySelector('.overlay');
+      const img = overlay.querySelector('img');
+      const scrollPosition = window.scrollY; // Get the scroll position
+  
+      // Calculate the scale factor based on the scroll position
+      const scale = 1 + (scrollPosition / 1000); // Zoom in as you scroll down
+  
+      // Apply the scale and opacity change to the overlay and image
+      img.style.transform = `scale(${scale})`; // Zoom image inward
+      overlay.style.opacity = `${1 - scrollPosition / 1000}`; // Fades the overlay out as you scroll
+    });
+  </script>
+  
+<body>
+    <div class="overlay">
+        <img src="https://pngimg.com/d/green_leaves_PNG3654.png" alt="Overlay Image">
+      </div>      
+    <div class="banner">
+        <h1 class="title">Visit Yunnan, China</h1>
+        <h4>Explore the diverse culture, beautiful mountains, and rich history</h4>
+    </div>
+    <div class="section" id="attractions">
+        <h2><span style="font-size: 50px;">Attractions</span></h2>
+        <div class="attractions-container"> 
+            <div class="attractions-item">
+                <h3>Kunming</h3>
+                <div class="image-container">
+                    <img src="https://live.staticflickr.com/4201/34863112435_593ff7a52a_b.jpg" alt="" class="zoom-image">
+                </div>
+                <p>Kunming, the capital of Yunnan Province, is known as the "City of Eternal Spring" for its mild climate year-round and is famous for its rich ethnic diversity and beautiful landscapes, such as the Stone Forest. </p>
+            </div>
+            <div class="attractions-item">
+                <h3>Tengchong</h3>
+                <div class="image-container">
+                    <img src="https://www.gokunming.com/images/store/large/3471.jpg" alt="" class="zoom-image">
+                </div>
+                <p>Lijiang is a UNESCO World Heritage site, renowned for its well-preserved ancient town, traditional Naxi culture, and picturesque views of Jade Dragon Snow Mountain.</p>
+            </div>
+            <div class="attractions-item">
+                <h3>Lijiang</h3>
+                <div class="image-container">
+                    <img src="https://us.images.westend61.de/0001061858pw/old-town-of-lijiang-at-sunrise-yunnan-china-CUF46434.jpg" alt="" class="zoom-image">
+                </div>
+                <p>Tengchong, a historic town in western Yunnan, is famous for its geothermal springs, volcanic landscapes, and the nearby Heshun Ancient Town, offering a blend of natural beauty and cultural heritage.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="food">
+        <h2><span style="font-size: 50px">Food</span></h2>
+        <div class="food-container">
+            <div class="image-container">
+                <img src="https://wildchina.com/wp-content/uploads/2021/01/Yunnan-cross-the-bridge-rice-noodles.jpg" alt="" class="zoom-image">
+            </div>
+            <h2>Guo Qiao Mi Xian - Crossing the Bridge Rice Noodles</h2>
+            <p class="hover-text">Guo Qiao Mi Xian literally translates into crossing the bridge rice noodles, and is an iconic Yunnan dish. The noodles are served in a hot pot, and the sides surround the pot in small dishes (like in the photo). These sides include meat, vegetables, quail eggs, etc. and they are one by one dropped into the pot. I think the aesthetic appeal of the dish, and being able to cook to toppings yourself really preserve the freshness of the food and bring an appreciation into the ingredients. </p>
+            <div class="image-container">
+                <img src="https://www.saveur.com/uploads/2019/03/18/IHT5AQUZH4ZMTGC4435EZD45FY-768x1024.jpg" alt="" class="zoom-image">
+            </div>
+            <h2>Xi Dou Fen (Porridge)</h2>
+            <p class="hover-text">Xidoufen is a dish from Tengchong, my hometown in Yunnan, and a dish that brings me nostalgia and joy. The name directly translates to happy bean powder, as the porridge is made from grinded yellow peas and boiled with water. The thick porridge is eaten with ersi, thin rice noodles, or baba, a Chinese panfried flatbread (like Naan), and like most Yunnan cuisine, seasonings shine in Xidoufen. The porridge is usually seasoned with chilli oil, soy sauce, cilantro, green onions, etc. which makes a flavorful porridge that the noodles can be mixed with or the bread can be dipped into.</p>
+            <div class="image-container">
+                <img src="https://news.cgtn.com/news/3d3d514d77677a4e33457a6333566d54/img/47a482223ff04b33b3f03053e376e359/47a482223ff04b33b3f03053e376e359.jpg" alt="" class="zoom-image">
+            </div>
+            <h2>Er Kuai (Fried Rice Cake)</h2>
+            <p class="hover-text">Er Kuai is another dish home to Yunnan. It is made from steamed rice that is pounded into a smooth dough, cut into thick pieces, and boiled. It's chewy, and delicious when fried with sauces and seasonings. I love savoury Er Kuai with meat and green onions!</p>
+        </div>
+    </div>
+    <div class="text-box" id="travel-tips">
+        <h2>Travel Tips!</h2>
+        <ol>
+            <li><p>Install Chinese apps like <span class="tip">WeChat, Alipay, Xiaohongshu, etc.</span> these apps can help with booking taxis, making payments, and contacting people! <a href="#">[Install these apps in the playstore]</a></p></li>
+            <li><p><span class="tip">Dress in layers!</span> Especially during the rainy season in summer, Yunnan can go from sunny, to pouring, to windy, to humid. It's important to dress in layers to quickly change based on the weather, I like wearing windbreakers.</p></li>
+        </ol>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class>
+        <div class="image-container">
+            <input type="checkbox" id="toggle-image" class="toggle-checkbox">
+            <label for="toggle-image">
+                <img src="https://i.ibb.co/Xr8XHnj7/Adorable-Cutie-Chiikawa-1.webp" alt="" class="toggle-image"  style="width: 400px; height: auto;">
+            </label>
+        </div>
+        <span class="gyat" style="font-size: x-large;"><p>Click on it, 点击它 ↑</p></span>        
+        <span class="gyat" style="font-size: x-large;"><p>Did you think this was helpful? Leave a like, 点赞!</p></span>
+    </div>
+</body>
+</html>
