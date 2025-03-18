@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+        .image-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        .zoom-image {
+            width: 300px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .zoom-image:hover {
+            transform: scale(1.1);
+        }
+
+        .hover-text {
+            font-size: 16px;
+            color: black;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://www.saveur.com/uploads/2019/03/18/IHT5AQUZH4ZMTGC4435EZD45FY-768x1024.jpg" alt="" class="zoom-image">
+        <p class="hover-text">Xidoufen is a dish from Tengchong, my hometown in Yunnan.</p>
+    </div>
+</body>
+</html>
